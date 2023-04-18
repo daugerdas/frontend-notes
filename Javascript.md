@@ -58,13 +58,41 @@ Examples of such languages:
 - Kotlin is a modern, concise and safe programming language that can target the browser or Node.
 
 ## Variables
-- About
-  - var
-  - let
-  - const 
-- Hoisting
-- Variable scope
-- Naming rules
+The names of variables, called identifiers, conform to certain rules. This syntax can be used to declare both local and global variables, depending on the execution context.
+
+#### var
+Declares a variable, optionally initializing it to a value.
+
+#### let
+Declares a block-scoped, local variable, optionally initializing it to a value.
+
+#### const
+Declares a block-scoped, read-only named constant.
+
+
+### Hoisting
+JavaScript Hoisting refers to the process whereby the interpreter appears to move the declaration of functions, variables or classes to the top of their scope, prior to execution of the code.
+
+var-declared variables are hoisted, meaning you can refer to the variable anywhere in its scope, even if its declaration isn't reached yet. You can see var declarations as being "lifted" to the top of its function or global scope. However, if you access a variable before it's declared, the value is always undefined, because only its declaration is hoisted, but not its initialization.
+
+Whether let and const are hoisted is a matter of definition debate. Referencing the variable in the block before the variable declaration always results in a ReferenceError, because the variable is in a "temporal dead zone" from the start of the block until the declaration is processed.
+
+Unlike var declarations, which only hoist the declaration but not its value, function declarations are hoisted entirely — you can safely call the function anywhere in its scope.
+
+In colloquial terms, any of the following behaviors may be regarded as hoisting:
+
+- Being able to use a variable's value in its scope before the line it is declared. ("Value hoisting")
+- Being able to reference a variable in its scope before the line it is declared, without throwing a ReferenceError, but the value is always undefined. ("Declaration hoisting")
+- The declaration of the variable causes behavior changes in its scope before the line in which it is declared (let, const, class).
+
+### Variable scope 
+A variable may belong to one of the following scopes:
+
+- Global scope: The default scope for all code running in script mode.
+- Module scope: The scope for code running in module mode.
+- Function scope: The scope created with a function.
+In addition, variables declared with let or const can belong to an additional scope:
+- Block scope: The scope created with a pair of curly braces (a block).
 
 ## Data types
 - Objects
