@@ -95,9 +95,73 @@ In addition, variables declared with let or const can belong to an additional sc
 - Block scope: The scope created with a pair of curly braces (a block).
 
 ## Data types
-- Objects
-  - Prototypal inheritance 
-  - Object prototype
+The latest ECMAScript standard defines eight data types.  JavaScript is also a weakly typed language, which means it allows implicit type conversion when an operation involves mismatched types, instead of throwing type errors.
 
-## Data structures
-- Arrays
+All types except Object define immutable values represented directly at the lowest level of the language. We refer to values of these types as primitive values. All primitive types, except null and undefined, have their corresponding object wrapper types, which provide useful methods for working with the primitive values. Seven data types that are primitives.
+- Boolean. true and false.
+- null. A special keyword denoting a null value.
+- undefined. A top-level property whose value is not defined.
+- Number. An integer or floating point number. For example: 42 or 3.14159.
+- BigInt. An integer with arbitrary precision. For example: 9007199254740992n.
+- String. A sequence of characters that represent a text value.
+- Symbol. A data type whose instances are unique and immutable.
+
+And non-primitive - Object.
+
+### Boolean 
+Boolean is a logical data type that can have only the values true or false. The Boolean value is named after English mathematician George Boole, who pioneered the field of mathematical logic.
+
+### null
+In computer science, a null value represents a reference that points, generally intentionally, to a nonexistent or invalid object or address. In JavaScript, null is marked as one of the primitive values, because its behavior is seemingly primitive. However, when using the typeof operator, it returns "object".
+
+### undefined
+undefined is a primitive value automatically assigned to variables that have just been declared, or to formal arguments for which there are no actual arguments. Conceptually, undefined indicates the absence of a value, while null indicates the absence of an object (which could also make up an excuse for typeof null === "object"). The language usually defaults to undefined when something is devoid of a value:
+- A return statement with no value (return;) implicitly returns undefined.
+- Accessing a nonexistent object property (obj.iDontExist) returns undefined.
+- A variable declaration without initialization (let x;) implicitly initializes the variable to undefined.
+- Many methods, such as Array.prototype.find() and Map.prototype.get(), return undefined when no element is found.
+
+### Number
+In JavaScript, Number is a numeric data type in the double-precision 64-bit floating point format (IEEE 754).
+
+NaN ("Not a Number") is a special kind of number value that's typically encountered when the result of an arithmetic operation cannot be expressed as a number. It is also the only value in JavaScript that is not equal to itself. 
+
+It is capable of storing positive floating-point numbers between 2<sup>-1074</sup> (Number.MIN_VALUE) and 2<sup>1024</sup> (Number.MAX_VALUE) as well as negative floating-point numbers between -2<sup>-1074</sup> and -2<sup>1024</sup>, but it can only safely store integers in the range -(2<sup>53</sup> − 1) (Number.MIN_SAFE_INTEGER) to 2<sup>53</sup> − 1 (Number.MAX_SAFE_INTEGER). Outside this range, JavaScript can no longer safely represent integers; they will instead be represented by a double-precision floating point approximation. You can check if a number is within the range of safe integers using Number.isSafeInteger().
+
+Values outside the range ±(2<sup>-1074</sup> to 2<sup>1024</sup>) are automatically converted:
+- Positive values greater than Number.MAX_VALUE are converted to +Infinity.
+- Positive values smaller than Number.MIN_VALUE are converted to +0.
+- Negative values smaller than -Number.MAX_VALUE are converted to -Infinity.
+- Negative values greater than -Number.MIN_VALUE are converted to -0.
+
+### BigInt
+In JavaScript, BigInt is a numeric data type that can represent integers in the arbitrary precision format. With BigInts, you can safely store and operate on large integers even beyond the safe integer limit (Number.MAX_SAFE_INTEGER) for Numbers. A BigInt is created by appending n to the end of an integer or by calling the BigInt() function.
+
+### String
+In any computer programming language, a string is a sequence of characters used to represent text. In JavaScript, a String is one of the primitive values and the String object is a wrapper around a String primitive. The String type represents textual data and is encoded as a sequence of 16-bit unsigned integer values representing UTF-16 code units. Each element in the string occupies a position in the string. The first element is at index 0, the next at index 1, and so on. The length of a string is the number of UTF-16 code units in it, which may not correspond to the actual number of Unicode characters.
+
+JavaScript strings are immutable. This means that once a string is created, it is not possible to modify it. String methods create new strings based on the content of the current string — for example:
+- A substring of the original using substring().
+- A concatenation of two strings using the concatenation operator (+) or concat().
+
+### Symbol 
+Symbol is a built-in object whose constructor returns a symbol primitive — also called a Symbol value or just a Symbol — that's guaranteed to be unique. A Symbol is a unique and immutable primitive value and may be used as the key of an Object property.
+
+### Object
+In JavaScript, objects can be seen as a collection of properties. With the object literal syntax, a limited set of properties are initialized; then properties can be added and removed. Property values can be values of any type, including other objects, which enables building complex data structures. Properties are identified using key values. A key value is either a String value or a Symbol value. In computer science, an object is a value in memory which is possibly referenced by an identifier. In JavaScript, objects are the only mutable values. Functions are, in fact, also objects with the additional capability of being callable. There are two types of object properties: The data property and the accessor property. Each property has corresponding attributes.
+
+### Other data structures
+
+#### Dates
+When representing dates, the best choice is to use the built-in Date utility in JavaScript.
+
+#### Indexed collections: Arrays and typed Arrays
+Arrays are regular objects for which there is a particular relationship between integer-keyed properties and the length property. Additionally, arrays inherit from Array.prototype, which provides a handful of convenient methods to manipulate arrays. For example, indexOf() searches a value in the array and push() appends an element to the array. This makes Arrays a perfect candidate to represent ordered lists.
+
+#### Keyed collections: Maps, Sets, WeakMaps, WeakSets
+These data structures take object references as keys. Set and WeakSet represent a collection of unique values, while Map and WeakMap represent a collection of key-value associations.
+
+#### Structured data: JSON
+JSON (JavaScript Object Notation) is a lightweight data-interchange format, derived from JavaScript, but used by many programming languages. JSON builds universal data structures that can be transferred between different environments and even across languages.
+
+
