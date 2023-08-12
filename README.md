@@ -1,1 +1,1 @@
-# frontend-notes
+# frontendintro.com
