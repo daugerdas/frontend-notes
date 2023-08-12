@@ -16,6 +16,8 @@
 - DOM
 - Dev Tools
 
+# JavaScript notes
+
 ## Introduction
 JavaScript is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions. JavaScript is a prototype-based, multi-paradigm, single-threaded, dynamic language, supporting object-oriented, imperative, and declarative (e.g. functional programming) styles. The standards for JavaScript are the ECMAScript Language Specification (ECMA-262) and the ECMAScript Internationalization API specification (ECMA-402).
 
@@ -164,4 +166,23 @@ These data structures take object references as keys. Set and WeakSet represent 
 #### Structured data: JSON
 JSON (JavaScript Object Notation) is a lightweight data-interchange format, derived from JavaScript, but used by many programming languages. JSON builds universal data structures that can be transferred between different environments and even across languages.
 
+## Type conversions
 
+Most of the time, operators and functions automatically convert the values given to them to the right type.
+
+### String conversion
+String conversion happens when we need the string form of a value.
+
+### Numeric conversion
+Numeric conversion in mathematical functions and expressions happens automatically.
+
+Numeric conversion rules:
+| value | becomes |
+| ----- | ------ |
+| undefined | NaN |
+| null | 0 |
+| true and false | 1 and 0 |
+| string | Whitespaces from the start and end are removed. If the remaining string is empty, the result is 0. Otherwise, the number is “read” from the string. An error gives NaN. |
+
+### Boolean conversion
+It happens in logical operations but can also be performed explicitly with a call to Boolean(value). Values that are intuitively “empty”, like 0, an empty string, null, undefined, and NaN, become false. Other values become true.
