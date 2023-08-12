@@ -1,6 +1,6 @@
 # frontendintro.com 
 
-![frontendintro](https://github.com/daugerdas/frontendintro.com/assets/14166408/effb6dad-0739-4b2c-94af-4a5ecaed0cca)
+![frontendintro](https://github.com/daugerdas/frontendintro.com/assets/14166408/9745a71e-3391-4964-aa85-a58f146f3493)
 
 Hey there! 👋 \
 frontendintro.com is a work in progress project that aims to present notes for those that are starting to learn frontend development. Currently all information is in github and markdown files, but there is a plan to have a separate website for this. You're very welcome to contribute!
