@@ -14,3 +14,5 @@ frontendintro.com is a work in progress project that aims to present notes for t
 - Terminal
 - Debugging
 - Code Editors
+
+<a href="https://www.buymeacoffee.com/daugerdas" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 30px !important;width: 120px !important;" ></a>
