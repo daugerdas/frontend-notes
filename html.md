@@ -1,5 +1,25 @@
-The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. 
- 
+# Hyper Text Markup Language (HTML)
+
+The Hyper Text Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. 
+
+## Elements
+
+- Meta elements - `title` defines the document's title that is shown in a browser's title bar or a page's tab. It only contains text; tags within the element are ignored, `meta` element represents metadata that cannot be represented by other HTML meta-related elements. Metadata is — in its very simplest definition — data that describes data. For example, an HTML document is data, `link` specifies relationships between the current document and an external resource., etc.
+- Section elements - `article`, `header`, `footer`, `section`, `nav`, etc.
+- Heading elements - `h1`-`h6`, `hgroup` element represents a multi-level heading for a section of a document, etc.
+- Grouping elements - `main` element represents the dominant content of the `<body>` of a document., `p`, `ol`, `ul`, `dl` element represents a description list (specified using the description term `<dt>` element and `<dd>` description details elements), `figure` element represents self-contained content, potentially with an optional caption, which is specified using the (`<figcaption>`) element, `div`
+- Table elements - `table`, `tr`, `td`, etc.
+- Text elements - `em` element marks text that has stress emphasis, `br` element produces a line break in text (carriage-return), `mark` represents text which is marked or highlighted for reference or notation purposes, due to the marked passage's relevance or importance in the enclosing context, `abbr` represents an abbreviation or acronym; the optional title attribute can provide an expansion or description for the abbreviation, etc.
+
+## Interactive elements
+
+Interactive elements 
+- Anchors
+- Element forms - `form`, `input`, `select`, etc. 
+- Embedded elements - `audio`, `iframe`, `img`, `svg`, `video`, `canvas`, etc.
+
+
+## Majority of elements
 | HTML Element and Tags | Description |
 | --------------------- | ----------- |
 | `<!DOCTYPE html>` | Defines that this document is an HTML5 document. All HTML documents must start with this declaration. This declaration is NOT case sensitive. |
