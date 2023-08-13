@@ -2,14 +2,20 @@
 
 Introduction
 Anatomy
+Elements
+
+## Introduction 
+The Hyper Text Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. The first version of HTML was written by Tim Berners-Lee in 1993. Since then, there have been many different versions of HTML.
 
 
-The Hyper Text Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser.
-
+## Anatomy
 HTML consists of a series of elements. The element is the opening tag, followed by content, followed by the closing tag.
-
 ![Untitled-2](https://github.com/daugerdas/frontendintro.com/assets/14166408/8d73be56-6f1f-4682-a856-b2381d8585cf)
+
+HTML attributes provide additional information about HTML elements.The HTML class attribute is used to specify a class for an HTML element. Multiple HTML elements can share the same class. The class attribute is often used to point to a class name in a style sheet. It can also be used by a JavaScript to access and manipulate elements with the specific class name.
 ![Untitled-3](https://github.com/daugerdas/frontendintro.com/assets/14166408/ffebd742-65d9-49c9-bb9d-e135ecfe7ecf)
+
+The text between <html> and </html> describes the web page, and the text between <body> and </body> is the visible page content. The markup text <title>This is a title</title> defines the browser page title shown on browser tabs and window titles. Between <head> and </head>, a <meta> element can be used to define webpage metadata. The Document Type Declaration <!DOCTYPE html> is for HTML5. If a declaration is not included, various browsers will revert to "quirks mode" for rendering.
 ![Untitled-4](https://github.com/daugerdas/frontendintro.com/assets/14166408/06f83f6b-53ee-4ef9-ad70-176e510b9bc5)
 
 
@@ -22,7 +28,7 @@ HTML consists of a series of elements. The element is the opening tag, followed 
 - Table elements - `table`, `tr`, `td`, etc.
 - Text elements - `em` element marks text that has stress emphasis, `br` element produces a line break in text (carriage-return), `mark` represents text which is marked or highlighted for reference or notation purposes, due to the marked passage's relevance or importance in the enclosing context, `abbr` represents an abbreviation or acronym; the optional title attribute can provide an expansion or description for the abbreviation, etc.
 
-## Interactive elements
+### Interactive elements
 
 Interactive elements 
 - Anchors
@@ -30,7 +36,7 @@ Interactive elements
 - Embedded elements - `audio`, `iframe`, `img`, `svg`, `video`, `canvas`, etc.
 
 
-## Majority of elements
+### Majority of elements
 | HTML Element and Tags | Description |
 | --------------------- | ----------- |
 | `<!DOCTYPE html>` | Defines that this document is an HTML5 document. All HTML documents must start with this declaration. This declaration is NOT case sensitive. |
