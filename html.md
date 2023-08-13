@@ -2,6 +2,8 @@
 
 The Hyper Text Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser.
 
+HTML consists of a series of elements. The element is the opening tag, followed by content, followed by the closing tag.
+
 ![Untitled-2](https://github.com/daugerdas/frontendintro.com/assets/14166408/8d73be56-6f1f-4682-a856-b2381d8585cf)
 
 
