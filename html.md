@@ -9,8 +9,10 @@ The Hyper Text Markup Language or HTML is the standard markup language for docum
 
 
 ## Anatomy
-HTML consists of a series of elements. The element is the opening tag, followed by content, followed by the closing tag.
-![Untitled-2](https://github.com/daugerdas/frontendintro.com/assets/14166408/8d73be56-6f1f-4682-a856-b2381d8585cf)
+HTML consists of a series of elements. The element is the opening tag, followed by content, followed by the closing tag `<p>hello world</p>`.
+| Opening tag | Content | Closing tag |
+| --- | --- | --- |
+| `<p>` | hello world | `</p>` |
 
 HTML attributes provide additional information about HTML elements.The HTML class attribute is used to specify a class for an HTML element. Multiple HTML elements can share the same class. The class attribute is often used to point to a class name in a style sheet. It can also be used by a JavaScript to access and manipulate elements with the specific class name.
 ![Untitled-3](https://github.com/daugerdas/frontendintro.com/assets/14166408/ffebd742-65d9-49c9-bb9d-e135ecfe7ecf)
