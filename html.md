@@ -15,11 +15,25 @@ HTML consists of a series of elements. The element is the opening tag, followed 
 | `<p>` | hello world | `</p>` |
 
 HTML attributes provide additional information about HTML elements.The HTML class attribute is used to specify a class for an HTML element. Multiple HTML elements can share the same class. The class attribute is often used to point to a class name in a style sheet. It can also be used by a JavaScript to access and manipulate elements with the specific class name.
-![Untitled-3](https://github.com/daugerdas/frontendintro.com/assets/14166408/ffebd742-65d9-49c9-bb9d-e135ecfe7ecf)
 
-The text between <html> and </html> describes the web page, and the text between <body> and </body> is the visible page content. The markup text <title>This is a title</title> defines the browser page title shown on browser tabs and window titles. Between <head> and </head>, a <meta> element can be used to define webpage metadata. The Document Type Declaration <!DOCTYPE html> is for HTML5. If a declaration is not included, various browsers will revert to "quirks mode" for rendering.
-![Untitled-4](https://github.com/daugerdas/frontendintro.com/assets/14166408/06f83f6b-53ee-4ef9-ad70-176e510b9bc5)
+| Opening tag beginning | Attribute | Opening tag end | Content | Closing tag |
+| --- | --- | --- | --- | --- |
+| `<p` | `class="text"` | `>` | hello world | `</p>` |
 
+The text between `<html>` and `</html>` describes the web page, and the text between `<body>` and `</body>` is the visible page content. The markup text `<title>Title</title>` defines the browser page title shown on browser tabs and window titles. Between `<head>` and `</head>`, a `<meta>` element can be used to define webpage metadata. The Document Type Declaration `<!DOCTYPE html>` is for HTML5. If a declaration is not included, various browsers will revert to "quirks mode" for rendering.
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Title</title>
+  </head>
+  <body>
+    <p>hello world</p>
+  </body>
+</html>
+```
 
 ## Elements
 
