@@ -35,6 +35,9 @@ The text between `<html>` and `</html>` describes the web page, and the text bet
 </html>
 ```
 
+## Comments 
+To write an HTML comment, wrap it in the special markers `<!--` and `-->`.
+
 ## Elements
 
 - Meta elements - `title` defines the document's title that is shown in a browser's title bar or a page's tab. It only contains text; tags within the element are ignored, `meta` element represents metadata that cannot be represented by other HTML meta-related elements. Metadata is — in its very simplest definition — data that describes data. For example, an HTML document is data, `link` specifies relationships between the current document and an external resource., etc.
