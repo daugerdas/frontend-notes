@@ -2,6 +2,19 @@
 
 Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML.
 
+## Selectors
+
+| Selector | Description |
+| ---- | ---- |
+| Element selector | No special syntax, any stylable DOM element can be used a a selector. It will apply to all elements with that name. |
+| Class selector | Specified with a period at the start (e.g. `.text`). Applies to any element that has this class name. | 
+| ID selector | Specified with a hash or pound symbol (e.g. `#navigation`). ID should be used only once per page. | 
+| Attribute selector | Using the brackets elements with specific attributes and values can be targeted (e.g. `input[type='email']`).|
+| Pseudo-class selector | It is a keyword added to a selector that specifies a special state of the selected elements (e.g. `button:hover`).
+
+
+CSS rule set is made of a selector and a series of rules or style definitions.
+
 ## Box model
 
 Everything in CSS has a box around it, and understanding these boxes is key to being able to create layouts with CSS, or to align items with other items.
@@ -25,7 +38,8 @@ CSS reset (reset stylesheet) is a collection of CSS rules used to clear the form
 
 Flexbox is the commonly-used name for the CSS Flexible Box Layout Module, a layout model for displaying items in a single dimension — as a row or as a column.
 
-Properties: `align-content`,
+Properties: 
+`align-content`,
 `align-items`,
 `align-self`,
 `flex`,
