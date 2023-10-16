@@ -10,12 +10,12 @@ The Hyper Text Markup Language or HTML is the standard markup language for docum
 XML (eXtensible Markup Language) provides a way to create new, standards-based markup languages.
 
 ## Anatomy
-HTML consists of a series of elements. The element is the opening tag, followed by content, followed by the closing tag `<p>hello world</p>`.
+HTML consists of a series of elements. Most elements consists of the opening tag, followed by content, followed by the closing tag `<p>hello world</p>`. A tag for an element without a closing tag is known as a self-closing tag.
 | Opening tag | Content | Closing tag |
 | --- | --- | --- |
 | `<p>` | hello world | `</p>` |
 
-HTML attributes provide additional information about HTML elements.The HTML class attribute is used to specify a class for an HTML element. Multiple HTML elements can share the same class. The class attribute is often used to point to a class name in a style sheet. It can also be used by a JavaScript to access and manipulate elements with the specific class name.
+HTML attributes provide additional information about HTML elements. HTML attributes are special words used inside the opening tag of an element to control the element's behavior. The HTML class attribute is used to specify a class for an HTML element. Multiple HTML elements can share the same class. The class attribute is often used to point to a class name in a style sheet. It can also be used by a JavaScript to access and manipulate elements with the specific class name.
 
 | Opening tag beginning | Attribute | Opening tag end | Content | Closing tag |
 | --- | --- | --- | --- | --- |
@@ -37,16 +37,17 @@ The text between `<html>` and `</html>` describes the web page, and the text bet
 ```
 
 ## Comments 
-To write an HTML comment, wrap it in the special markers `<!--` and `-->`.
+To write an HTML comment, wrap it in the special markers `<!--` and `-->`. It can contain any number of lines of text.
 
 ## Elements
 
 - Meta elements - `title` defines the document's title that is shown in a browser's title bar or a page's tab. It only contains text; tags within the element are ignored, `meta` element represents metadata that cannot be represented by other HTML meta-related elements. Metadata is — in its very simplest definition — data that describes data. For example, an HTML document is data, `link` specifies relationships between the current document and an external resource., etc.
-- Section elements - `article`, `header`, `footer`, `section`, `nav`, etc.
-- Heading elements - `h1`-`h6`, `hgroup` element represents a multi-level heading for a section of a document, etc.
+- Section elements - `article`, `header`, `footer`, `section`, `nav`, etc. HTML5 has some elements that identify different content areas. These elements make your HTML easier to read and help with Search Engine Optimization (SEO) and accessibility.
+- Heading elements - `h1`-`h6`, `hgroup` element represents a multi-level heading for a section of a document, etc. he h1 through h6 heading elements are used to signify the importance of content below them. The lower the number, the higher the importance, so h2 elements have less importance than h1 elements. Only use one h1 element per page and place lower importance headings below higher importance headings.
 - Grouping elements - `main` element represents the dominant content of the `<body>` of a document., `p`, `ol`, `ul`, `dl` element represents a description list (specified using the description term `<dt>` element and `<dd>` description details elements), `figure` element represents self-contained content, potentially with an optional caption, which is specified using the (`<figcaption>`) element, `div`
 - Table elements - `table`, `tr`, `td`, etc.
 - Text elements - `em` element marks text that has stress emphasis, `br` element produces a line break in text (carriage-return), `mark` represents text which is marked or highlighted for reference or notation purposes, due to the marked passage's relevance or importance in the enclosing context, `abbr` represents an abbreviation or acronym; the optional title attribute can provide an expansion or description for the abbreviation, etc.
+- The `p` element is used to create a paragraph of text on websites. 
 
 ### Interactive elements
 
