@@ -11,6 +11,7 @@ XML (eXtensible Markup Language) provides a way to create new, standards-based m
 
 ## Anatomy
 HTML consists of a series of elements. Most elements consists of the opening tag, followed by content, followed by the closing tag `<p>hello world</p>`. A tag for an element without a closing tag is known as a self-closing tag.
+
 | Opening tag | Content | Closing tag |
 | --- | --- | --- |
 | `<p>` | hello world | `</p>` |
