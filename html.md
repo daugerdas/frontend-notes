@@ -7,7 +7,7 @@
 ## Introduction 
 The Hyper Text Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. The first version of HTML was written by Tim Berners-Lee in 1993. Since then, there have been many different versions of HTML. HTML tags give a webpage its structure. You can use HTML tags to add photos, buttons, and other elements to your webpage. HTML is case-insesitive with regard to tag and attribute names, but XHTML is case sensitive.
 
-XML (eXtensible Markup Language) provides a way to create new, standards-based markup languages.
+XML (eXtensible Markup Language) provides a way to create new, standards-based markup languages. HTML and XHTML define the syntax and placement of special, embedded directions that aren't displayed by the browser but advise it how to display the contents of the document, including text, images, and other support media.
 
 ## Anatomy
 HTML consists of a series of elements. Most elements consists of the opening tag, followed by content, followed by the closing tag `<p>hello world</p>`. A tag for an element without a closing tag is known as a self-closing tag.
