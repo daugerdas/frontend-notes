@@ -1,6 +1,6 @@
 | Term | Description | References |
 | ---- | ----------- | ---------- | 
-| HTTP | The Hypertext Transfer Protocol (HTTP) is a TCP/IP-based application layer communication protocol that standardizes how clients and servers communicate with each other. | https://developer.mozilla.org/en-US/docs/Web/HTTP </br> https://cs.fyi/guide/http-in-depth </br> https://http.dev/explained |
+| HTTP | The Hypertext Transfer Protocol (HTTP) is a TCP/IP-based application layer communication protocol that standardizes how clients and servers communicate with each other. | https://developer.mozilla.org/en-US/docs/Web/HTTP </br> https://cs.fyi/guide/http-in-depth </br> https://http.dev/explained </br> https://youtu.be/kBXQZMmiA4s |
 | Application Layer | An application layer is an abstraction layer that specifies the shared communication protocols and interface methods used by hosts in a communications network. | https://en.wikipedia.org/wiki/Application_layer |
 | Client | The client identifies itself with the user-agent, which is any tool that makes requests for the benefit of the user. | https://http.dev/explained | 
 | Server | The web server is the entity that serves the documents, or resources, that are requested by the client. | https://http.dev/explained |
