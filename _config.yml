@@ -7,3 +7,4 @@ include:
   - README.md
   - JavaScript.md
   - HTML.md
+theme: jekyll-theme-minimal
