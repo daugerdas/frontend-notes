@@ -16,3 +16,5 @@ Also available at https://daugerdas.github.io/frontendintro.com/ for a more simp
 - Terminal
 - Debugging
 - Code Editors
+
+{:toc}
