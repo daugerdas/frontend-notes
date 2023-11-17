@@ -17,4 +17,5 @@ Also available at https://daugerdas.github.io/frontendintro.com/ for a more simp
 - Debugging
 - Code Editors
 
-* TOC {:toc}
+* TOC
+{:toc}
