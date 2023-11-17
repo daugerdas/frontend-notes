@@ -12,4 +12,6 @@ include:
   - JavaScript.md
   - HTML.md
 remote_theme: pages-themes/cayman@v0.2.0
+kramdown:
+  parse_block_html: true
 
